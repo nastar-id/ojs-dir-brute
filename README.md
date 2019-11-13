@@ -1,2 +1,2 @@
-# ojs-dir-brute
+# OJS Dir Brute
 Directory Brute For Open Journal System
