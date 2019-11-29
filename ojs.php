@@ -15,11 +15,6 @@ $pat = array("/files/","/file/","/journals/","/journal/","/jurnal/","/jurnals/",
 "/journal_data/","/journal_data_file/","/journal_data_files/");
 echo "Silahkeun Masukeun Webna: ";
 $wb = trim(fgets(STDIN));
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $wb);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$bjir = curl_exec($ch);
-curl_close($ch);
 foreach($pat as $path) {
 $c3k = get_headers($wb.$path);
 if (preg_match("/200/", $c3k[0])) {
